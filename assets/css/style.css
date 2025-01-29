@@ -86,7 +86,11 @@ hr {
   font-size: 16px;
 }
 
-.header__button {
+.header__button-container {
+  display: inline-block;
+}
+
+.header__button, .header__menu-button {
     background-color: #E3F5F5;
     color: #03B2A5;
     border: 0;
@@ -95,6 +99,18 @@ hr {
     font-weight: 700;
     font-size: 16px;
     text-wrap: nowrap;
+}
+
+.header__menu-button {
+    display: none;
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+}
+
+.header__button img, .header__menu-button img {
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
 /* BREADCRUMBS */
@@ -165,16 +181,19 @@ hr {
 }
 
 .post:nth-child(-n+2) {
-  width: calc(50% - 7.5px);
+    width: calc(50% - 7.5px);
 }
 
 .post__tags {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     margin: 14px;
 }
 
 .post__tag {
     display: inline-block;
+    width: min-content;
     padding: 6px 8px;
     opacity: 70%;
     background-color: #FFFFFF;
@@ -188,6 +207,7 @@ hr {
 
 .post__image {
     width: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 16px 16px 0 0;
 }
@@ -258,6 +278,7 @@ hr {
 .footer__content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 5vw;
     margin-top: 20px;
 }
@@ -268,10 +289,14 @@ hr {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    gap: 10px;
+    gap: 10px 15px;
     font-weight: 700;
     font-size: 16px;
     list-style: none;
+}
+
+.footer__menu-item a {
+    text-wrap: nowrap;
 }
 
 /* FOOTER MAIL */
@@ -372,4 +397,46 @@ hr {
     opacity: 70%;
     font-weight: 400;
     font-size: 14px;
+}
+
+/* MEDIA */
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 5vw;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__button {
+        display: none;
+    }
+
+    .header__menu-button {
+        display: inline-block;
+        width: 51px;
+        height: 51px;
+        padding: 0;
+    }
+
+    .header__menu-img {
+        width: 51px;
+        height: 51px;
+    }
+
+    .filter {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .posts {
+        justify-content: center;
+    }
+
+    .post, .post:nth-child(-n+2) {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
