@@ -132,6 +132,7 @@ hr {
 /* MAIN */
 
 .main__title {
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
@@ -143,6 +144,7 @@ hr {
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
+    white-space: nowrap;
 }
 
 .filter__button {
@@ -402,10 +404,6 @@ hr {
 /* MEDIA */
 
 @media (max-width: 768px) {
-    .container {
-        margin: 0 5vw;
-    }
-
     .header__menu {
         display: none;
     }

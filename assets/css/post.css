@@ -1,0 +1,263 @@
+/* ПЕРЕМЕННЫЕ */
+
+:root {
+    --max-width: 50vw;
+}
+
+/* БЭМ */
+
+.article {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/* POST-DATA */
+
+.post-data {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: var(--max-width);;
+}
+
+.post-data__title {
+    color: #333333;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.post-data__info {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    color: #494949;
+}
+
+.post-data__image-container {
+    max-width: var(--max-width);;
+}
+
+.post-data__image {
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
+}
+
+.post-data__image-description {
+    color: #868686;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.post-data__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post-data__list-element-center {
+    display: flex;
+    align-items: center;
+}
+
+.post-data__list-element {
+    display: flex;
+    align-items: start;
+}
+
+.post-data__list-text {
+    font-weight: 500;
+    font-size: 16px;
+    color: #333333;
+    text-decoration: underline;
+}
+
+.post-data__list-under-1 {
+    margin-left: 40px
+}
+
+.post-data__list-under-2 {
+    margin-left: 60px;
+}
+
+.post-data__list-under-3 {
+    margin-left: 80px;
+}
+
+.post-data__article-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.post-data__quote {
+    position: relative;
+    padding: 24px;
+    border-radius: 16px;
+    background-color: #F3F7FE;
+    color: #333333;
+}
+
+.post-data__quote-marker {
+    position: absolute;
+}
+
+.post-data__quote-text {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.post-data__quote-author {
+    font-weight: 700;
+}
+
+.post-data__list {
+    list-style-type: none;
+    display: flex;
+
+}
+
+.post-data__list li {
+    margin-left: 20px;
+}
+
+.post-data__list li::before {
+    background-image: url("../icons/ul-dot.svg");
+}
+
+.post-data__text-with-blop {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    height: 100%;
+    max-height: 800px;
+    box-sizing: border-box;
+}
+
+.post-data__blop {
+    position: absolute;
+    z-index: -1;
+}
+
+.post-data__blop-text {
+    max-width: 500px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.post-data__practice {
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.post-data__practice-header {
+    font-weight: 700;
+}
+
+.post-data__hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-data__tag-links nav a {
+    color: #2963A3;
+}
+
+.post-data__tag-links-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 10px;
+}
+
+.post-data__bottom-post {
+    display: flex;
+    justify-content: start;
+    width: 95vw;
+    gap: 10vw;
+}
+
+.post-data__bottom-post-text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 30vw;
+}
+
+/* TEXT-IMAGE BLOCKS */
+
+.text-image-block-1 {
+    display: flex;
+    gap: 20px;
+}
+
+.text-image-block-1__img {
+    max-width: 40%;
+    height: auto;
+}
+
+.text-image-block-2 {
+    display: flex;
+    gap: 20px;
+}
+
+.text-image-block-2__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-image-block-2__text {
+    margin-top: 15px;
+}
+
+/* AD POSTS */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sidebar__hr {
+    width: 100%;
+    background-color: #DEDEDE;
+    opacity: 100%;
+}
+
+.sidebar__qlick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 24px;
+    padding: 24px;
+    width: 25vw;
+    background-color: #E6F0FD;
+}
+
+.sidebar__psychologist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 24px;
+    padding: 24px;
+    width: 25vw;
+    background-color: #EFF5FB;
+}
+
+.sidebar__psychologist-photo {
+    width: 70%;
+    height: auto;
+}
+
+.sidebar__psychologist-list {
+    display: block;
+}
