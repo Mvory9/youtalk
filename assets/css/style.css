@@ -186,6 +186,18 @@ hr {
     width: calc(50% - 7.5px);
 }
 
+.post__link, .post__link:hover {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.post__link:hover {
+    .post__title {
+        text-decoration: underline;
+    }
+}
+
 .post__tags {
     display: flex;
     flex-direction: column;
