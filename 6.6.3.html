@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модуль 6.6.1</title>
+</head>
+<body>
+    <script>
+        const input = prompt("Введите любое число:");
+
+        if (!input || input === null || input === "") {
+            console("Вы не ввели число!");
+        } else {
+            let number = Number(input);
+
+            if (isNaN(number)) {
+                console.log("Пожалуйста, введите корректное число!");
+            } else {
+                let resultArray = [];
+                for (let i = 0; i <= number; i++) {
+                    resultArray.push(i);
+                }
+
+                console.log(resultArray);
+            }
+        }
+    </script>
+</body>
+</html>
