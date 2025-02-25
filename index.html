@@ -17,7 +17,7 @@
             align-items: center;
         }
 
-        .navigation-container {
+        .navigation__container {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             padding: 40px;
@@ -33,14 +33,14 @@
             text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
 
-        .nav-buttons {
+        .nav__buttons {
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
             justify-content: center;
         }
 
-        .nav-button {
+        .nav__button {
             display: inline-block;
             padding: 15px 30px;
             background: linear-gradient(45deg, #6a11cb, #2575fc);
@@ -52,19 +52,19 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
-        .nav-button:hover {
+        .nav__button:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
             background: linear-gradient(45deg, #2575fc, #6a11cb);
         }
 
-        .nav-button:active {
+        .nav__button:active {
             transform: translateY(2px);
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
         }
 
         @media (max-width: 600px) {
-            .navigation-container {
+            .navigation__container {
                 padding: 20px;
             }
             
@@ -72,7 +72,7 @@
                 font-size: 2em;
             }
             
-            .nav-button {
+            .nav__button {
                 padding: 12px 25px;
                 font-size: 1em;
             }
@@ -80,14 +80,14 @@
     </style>
 </head>
 <body>
-    <div class="navigation-container">
+    <div class="navigation__container">
         <h1>Выберите модуль</h1>
-        <div class="nav-buttons">
-            <a href="6.6.1.html" class="nav-button">Модуль 6.6.1</a>
-            <a href="6.6.2.html" class="nav-button">Модуль 6.6.2</a>
-            <a href="6.6.3.html" class="nav-button">Модуль 6.6.3</a>
-            <a href="6.6.4.html" class="nav-button">Модуль 6.6.4</a>
-            <a href="6.6.5.html" class="nav-button">Модуль 6.6.5</a>
+        <div class="nav__buttons">
+            <a href="6.6.1.html" class="nav__button">Модуль 6.6.1</a>
+            <a href="6.6.2.html" class="nav__button">Модуль 6.6.2</a>
+            <a href="6.6.3.html" class="nav__button">Модуль 6.6.3</a>
+            <a href="6.6.4.html" class="nav__button">Модуль 6.6.4</a>
+            <a href="6.6.5.html" class="nav__button">Модуль 6.6.5</a>
         </div>
     </div>
 </body>
