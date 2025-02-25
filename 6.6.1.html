@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модуль 6.6.1</title>
+</head>
+<body>
+    <script>
+        const input = prompt("Введите слово для проверки на палиндромность:");
+        
+        if (!input || input === null || input === "") {
+            console.log("Вы не ввели слово! Обновите страницу (F5) и попробуйте снова.");
+        } else {
+            const clearInput = input.replaceAll(" ", "").toLowerCase();
+            const charSet = new Set();
+            
+            const chars = input.split('');
+            
+            let isPalindrome = true;
+            for (let i = 0; i < Math.floor(chars.length / 2); i++) {
+                if (chars[i] !== chars[chars.length - 1 - i]) {
+                    isPalindrome = false;
+                    break;
+                }
+                charSet.add(chars[i]);
+            }
+            
+            console.log(`Слово ${input} ${isPalindrome ? "является" : "не является"} палиндромом`);
+        }
+    </script>
+</body>
+</html>
